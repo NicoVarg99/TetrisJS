@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Tetris</title>
+    <meta charset="utf-8">
+
+    <!-- Script per editarietà -->
+    <script src="js/class.js"></script>
+
+    <!-- data-main specifica lo scrpt da eseguire utilizzando RequireJS -->
+    <script src="js/require.js" data-main="js/src/main.js"></script>
+
+  </head>
+  <body>
+
+
+    <canvas></canvas>
+
+    <!-- Includo engine sotto al tag canvas per evitare che il codice venga eseguito prima che la pagina sia stata caricata -->
+    <script src="js/engine.js"></script>
+
+  </body>
+</html>
