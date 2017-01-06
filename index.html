@@ -2,6 +2,8 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="js/matrix.js"></script>
+
     <meta charset="utf-8">
   </head>
   <body onload="startGame();">
@@ -296,7 +298,8 @@
     </table>
   </td>
   <td>
-    <button onclick="worldFall();">Next</button>
+    <button onclick="fall();">Next</button>
+    <button onclick="blockMatrix = blockGen();stampaArray(worldMatrix);">BlockGen</button>
   </td>
 </tr>
 </table>
