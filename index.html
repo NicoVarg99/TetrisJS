@@ -2,9 +2,11 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <meta charset="utf-8">
   </head>
   <body onload="startGame();">
-
+    <table id="frame">
+      <tr><td>
     <table>
       <tr id="row0">
         <td id="r0el0"></td>
@@ -292,7 +294,12 @@
         <td id="r21el9"></td>
       </tr>
     </table>
+  </td>
+  <td>
+    <button onclick="worldFall();">Next</button>
+  </td>
+</tr>
+</table>
 
-    <button>Next</button>
   </body>
 </html>

@@ -1,7 +1,12 @@
-table{
+table !#frame {
   border: 1px solid gray;
 }
 
 td{
   border: 1px solid gray;
+}
+
+
+table #frame{
+  border: 0px;
 }
