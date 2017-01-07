@@ -1,0 +1,32 @@
+.maxi{
+  display: inline-block;
+  font-size: 25;
+}
+
+
+.orbitron{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.bungee{
+  font-family: 'Bungee Shade', cursive;
+  font-size: 40;
+  text-align: center;
+}
+
+table !#frame {
+  border: 1px solid gray;
+}
+
+td{
+  border: 1px solid gray;
+}
+
+table #frame{
+  border: 0px;
+}
+
+button{
+  height: 50px;
+  width: 150px;
+}

@@ -1,7 +1,7 @@
 document.onkeydown = function(evt) {
     evt = evt || window.event;
 
-    //console.log(evt.keyCode);
+    console.log(evt.keyCode);
 
     if (evt.keyCode == 32) {
         console.log("Spazio");
@@ -23,8 +23,14 @@ document.onkeydown = function(evt) {
     }
 
     if (evt.keyCode == 38) {
-        console.log("Su");
+        //console.log("Su");
+      rotateOnce();
     }
 
+    if (evt.keyCode == 82) {
+        //console.log("r");
+        fineGioco();
+        startGame();
+    }
 
 };
