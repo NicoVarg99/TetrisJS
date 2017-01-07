@@ -178,7 +178,9 @@ function blockFall(){
         worldMatrix[i][j]=(worldMatrix[i][j]||blockMatrix[i][j]);
       }
     }
-    blockMatrix=makeGameMatrix();
+
+    blockMatrix = blockGen();
+    stampaArray(worldMatrix);
 
   }else{
     //fa scorrere blockMatrix

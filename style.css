@@ -10,3 +10,8 @@ td{
 table #frame{
   border: 0px;
 }
+
+button{
+  height: 50px;
+  width: 150px;
+}
