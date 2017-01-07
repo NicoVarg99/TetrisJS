@@ -6,6 +6,7 @@
 
 var punteggio;
 var blockType;
+var blockRotation;
 
 function startGame(){
   //var array = creaArray2D(10);
@@ -28,7 +29,8 @@ function stampaArray(){
       //document.getElementById("r"+i+"el"+j).innerText=i;
       var rm=realMatrix[i][j];
 
-
+      if(rm>10)
+        rm-=10;
 
       if(rm==0)
         document.getElementById("r"+i+"el"+j).style.backgroundColor="#232323";
