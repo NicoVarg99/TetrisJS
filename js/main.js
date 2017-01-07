@@ -21,7 +21,7 @@ function stampaArray(){
       realMatrix[i][j]=(worldMatrix[i][j]||blockMatrix[i][j]);
       //document.getElementById("r"+i+"el"+j).innerText=i;
 
-      if(realMatrix[i][j]==1)
+      if(realMatrix[i][j]>0)
         document.getElementById("r"+i+"el"+j).style.backgroundColor="green";
       else
         document.getElementById("r"+i+"el"+j).style.backgroundColor="gray";

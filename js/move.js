@@ -6,12 +6,12 @@ function moveLeft(){
     for(j=0;j<10;j++){
       if(j>0){
         //se non ci si trova nello spazio a sinistra
-        if(blockMatrix[i][j]==1&&worldMatrix[i][j-1]==1){ //Se lo spazio a sinistra è occupato, NON lascia spostare)
+        if(blockMatrix[i][j]>0&&worldMatrix[i][j-1]>0){ //Se lo spazio a sinistra è occupato, NON lascia spostare)
           canMove=false;
         }
       }else {
 
-        if(blockMatrix[i][j]==1)
+        if(blockMatrix[i][j]>0)
           canMove=false;
       }
 
@@ -40,11 +40,11 @@ function moveRight(){
     for(j=0;j<10;j++){
       if(j<9){
         //se non ci si trova nello spazio a destra
-        if(blockMatrix[i][j]==1&&worldMatrix[i][j+1]==1){ //Se lo spazio a sinistra è occupato, NON lascia spostare)
+        if(blockMatrix[i][j]>0&&worldMatrix[i][j+1]>0){ //Se lo spazio a sinistra è occupato, NON lascia spostare)
           canMove=false;
         }
       }else {
-        if(blockMatrix[i][j]==1)
+        if(blockMatrix[i][j]>0)
           canMove=false;
         }
     }

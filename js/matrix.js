@@ -14,7 +14,7 @@ function isLineEmpty(oneLineArray){
   //Restituisce true se la riga è vuota
   //Restituisce false se un blocco qualsiasi è occupato
   for(var j=0;j<10;j++)
-    if(oneLineArray[j]==1)
+    if(oneLineArray[j]>0)
       return false;
   return true;
 }
@@ -90,7 +90,7 @@ function blockGen(){
       [0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]
     ];
   }
-  if(num==2){ //L invertita
+  if(num==2){ //J
     return [
       [0,0,0,0,0,0,0,0,0,0],[0,0,0,0,1,0,0,0,0,0],[0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,0],
       [0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],
@@ -120,7 +120,7 @@ function blockGen(){
       [0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]
     ];
   }
-  if(num==5){ //Cubo
+  if(num==5){ //O
     return [
       [0,0,0,0,0,0,0,0,0,0],[0,0,0,0,1,1,0,0,0,0],[0,0,0,0,1,1,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],
       [0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],
@@ -161,7 +161,7 @@ function blockFall(){
         //nella riga sottostante di worldMatrix per consentire la caduta
         //Altrimenti unisce blockMatrix e worldMatrix in worldMatrix
         if(
-          (blockMatrix[i][j]==1&&worldMatrix[i+1][j]==1) //se l'elemento corrente è pieno e nell'altro è pieno
+          (blockMatrix[i][j]>0&&worldMatrix[i+1][j]>0) //se l'elemento corrente è pieno e nell'altro è pieno
           ||                                             //o
           (!isLineEmpty(blockMatrix[21]))                //se l'ultima riga non è vuota
         )
