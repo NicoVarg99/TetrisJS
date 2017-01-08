@@ -12,6 +12,11 @@ table #left{
     border: 0px;
 }
 
+.credits{
+  font-size: 12px;
+  text-align: center;
+}
+
 #right{
   margin-top:100px;
 
