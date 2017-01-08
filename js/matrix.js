@@ -50,7 +50,7 @@ function eliminaRighePiene(){
   for(var i=21;i>0;i--){
     if(isLineFull(worldMatrix[i])){
       eliminaRiga(i);
-      aggiungiPunti(50);
+      aggiungiPunti(100);
     }
 
   }
