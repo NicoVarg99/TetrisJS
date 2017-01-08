@@ -17,12 +17,13 @@ function startGame(){
   document.getElementById("points").innerText = punteggio;
   autoFallEnabled = true;
   stampaArray();
+  document.getElementById("gameover").style.display="none";
 }
 
 function stampaArray(){
 
 
-  for(var i=0;i<22;i++){
+  for(var i=2;i<22;i++){
     for(var j=0;j<10;j++){
 
       realMatrix[i][j]=(worldMatrix[i][j]||blockMatrix[i][j]);
@@ -60,7 +61,7 @@ function stampaArray(){
 function fineGioco(){
   console.log("Fine");
   autoFallEnabled = false;
-  document.getElementById("gameover").display="block";
+  document.getElementById("gameover").style.display="block";
 }
 
 

@@ -33,4 +33,9 @@ document.onkeydown = function(evt) {
         startGame();
     }
 
+    if (evt.keyCode == 80) {
+        //console.log("p");
+        changeAutoFall();
+    }
+
 };

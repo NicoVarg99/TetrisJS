@@ -10,16 +10,19 @@ function loop(){
   }
 }
 
-function changeAutofall(){
+function changeAutoFall(){
   //alert("pazzesco");
   if(autoFallEnabled){
     //disattiva autofall
     autoFallEnabled=false;
-    document.getElementById('btnAutoFall').innerText="Autofall: OFF";
+    //document.getElementById('btnAutoFall').innerText="Autofall: OFF";
+    document.getElementById('lblPause').style.display="block";
+
   }else{
     //attiva autofall
     //autofallID = setInterval(function(){loop();},1000);
     autoFallEnabled=true;
-    document.getElementById('btnAutoFall').innerText="Autofall: ON";
+    //document.getElementById('btnAutoFall').innerText="Autofall: ON";
+    document.getElementById('lblPause').style.display="none";
   }
 }
