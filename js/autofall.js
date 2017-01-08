@@ -1,5 +1,5 @@
 var autoFallEnabled = false;
-var autofallID = setInterval(function(){loop();},1000);
+var autofallID = setInterval(function(){loop();},750);
 
 function loop(){
   if(autoFallEnabled){

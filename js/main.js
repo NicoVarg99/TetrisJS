@@ -18,6 +18,7 @@ function startGame(){
   autoFallEnabled = true;
   stampaArray();
   document.getElementById("gameover").style.display="none";
+  document.getElementById('lblPause').style.display="none";
 }
 
 function stampaArray(){
